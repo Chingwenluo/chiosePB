@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07C4979A24F40EE000D87E71 /* Build configuration list for PBXProject "chiosePB" */;
+			buildConfigurationList = 07C4979A24F40EE000D87E71 /* Build configuration list for PBXProject "chiose" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -296,7 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chingwen.chiosePB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chingwen.chiose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chingwen.chiosePB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chingwen.chiose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07C4979A24F40EE000D87E71 /* Build configuration list for PBXProject "chiosePB" */ = {
+		07C4979A24F40EE000D87E71 /* Build configuration list for PBXProject "chiose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07C497B324F40EE000D87E71 /* Debug */,
