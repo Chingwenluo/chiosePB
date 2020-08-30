@@ -113,22 +113,9 @@ class ViewController: UIViewController {
         let day2 = calendar.startOfDay(for: now)
      
         let components = calendar.dateComponents([.day], from: day1, to: day2)
-        
-   
-        
-        
-        if (components.day!) < 120 {
+
             born = "誕生：\(components.day!)天"
         
-        }else if (components.day!) < 180 {
-            born = "誕生：\(components.day!)天"
-        }else if (components.day!) < 270 {
-            born = "誕生：\(components.day!)天"
-        }else if (components.day!) < 360 {
-            born = "誕生：\(components.day!)天"
-        }else if (components.day!) > 360 {
-            born = "誕生：\(components.day!)天"
-        }
         
     }
     
@@ -143,6 +130,14 @@ class ViewController: UIViewController {
     
         doctorImage.isHidden = false
 
+        if Int(smallSlider.value) < 2,Int(bigSlider.value) < 2 {
+            endResult = "孩子很努力在學，別太太緊張"
+        }else if Int(smallSlider.value) < 5,Int(bigSlider.value) < 5 {
+            endResult = "強大的學習能力"
+        }else if languageSwitch.isOn,Int(smallSlider.value) > 5,Int(bigSlider.value) > 5 {
+            endResult = "天才呀.....未來的愛因斯坦"
+        }
+        
         if Int(smallSlider.value) <= 3 {
             smallResult = "也開始在學(\(smallItem))的細動作"
         }else if Int(smallSlider.value) > 4{
@@ -153,13 +148,7 @@ class ViewController: UIViewController {
             }else if Int(bigSlider.value) > 4 {
             bigResult = "好厲害學這麼多粗動作"
          
-                if Int(smallSlider.value) < 3,Int(smallSlider.value) < 3 {
-                    endResult = "孩子很努力在學，別太太緊張"
-                }else if Int(smallSlider.value) < 5,Int(smallSlider.value) < 5 {
-                    endResult = "強大的學習能力"
-                }else if languageSwitch.isOn,Int(smallSlider.value) > 5,Int(smallSlider.value) > 5 {
-                    endResult = "天才呀.....未來的愛因斯坦"
-                }
+           
     }
         resultTextView.text = "\(name)寶寶,才\(born),您的\(sex),\(bigResult),\(smallResult),\(endResult)"
        
@@ -184,6 +173,9 @@ class ViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+        }
     
 }
 
