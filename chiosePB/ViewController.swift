@@ -170,7 +170,7 @@ class ViewController: UIViewController {
         todayLabel.text = ""
         bigItemNameLabel.text = ""
         smallItemNameLabel.text = ""
-        
+      
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
